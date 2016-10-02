@@ -1,0 +1,22 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	gnome-terminal
+
+# program launcher
+super + c
+	gnome-calculator
+
+super + f
+	firefox
+
+super + control + f
+	firefox -P
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
