@@ -146,7 +146,7 @@ if [ -e "$(which xclip)" ]; then
 fi
 
 # history
-alias h="fc -l -nr 0"
+alias h="history"
 
 # TMUX HELPER
 function tmux-wrap(){
