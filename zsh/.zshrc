@@ -115,7 +115,9 @@ alias ls="ls --color=auto"
 alias l="ls -lah"
 alias rf="rm -r"
 alias grep="grep --color=auto"
-#alias vim="nvim"
+
+# vim-like
+alias :q="exit"
 
 alias pdb="python3 -m pdb"
 
