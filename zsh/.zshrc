@@ -116,6 +116,9 @@ alias l="ls -lah"
 alias rf="rm -r"
 alias grep="grep --color=auto"
 
+# automatically change directory cd
+setopt autocd
+
 # vim-like
 alias :q="exit"
 
