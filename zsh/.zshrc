@@ -115,6 +115,7 @@ alias ls="ls --color=auto"
 alias l="ls -lah"
 alias rf="rm -r"
 alias grep="grep --color=auto"
+alias zsh-reload="source ~/.zshrc"
 
 # automatically change directory cd
 setopt autocd
