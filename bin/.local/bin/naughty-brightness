@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#naughty-screen
+
+echo "echo 50 > /sys/class/backlight/intel_backlight/brightness" | sudo zsh
