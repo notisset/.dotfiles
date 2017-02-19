@@ -13,7 +13,7 @@ if [[ "$THISHOST" == 'destroyer' ]]; then
    screenModes[0]="--output DP-2 --primary --mode 1920x1080 --rotate normal --left-of DVI-I-0"
    screenModes[1]="--output DP-2 --primary --mode 1920x1080 --rotate inverted --left-of DVI-I-0"
    screenModes[2]="--output DP-2 --primary --mode 1920x1080 --rotate left --left-of DVI-I-0"
-elif  [[ "$HOST" == 'elite' ]]; then
+elif  [[ "$THISHOST" == 'elite' ]]; then
    screenModes[0]="--output eDP1 --primary --mode 1366x768 --rotate normal"
    screenModes[1]="--output eDP1 --primary --mode 1366x768 --rotate inverted"
    screenModes[2]="--output eDP1 --primary --mode 1366x768 --rotate left"
