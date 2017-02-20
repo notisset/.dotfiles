@@ -1,4 +1,6 @@
+set formatoptions-=cro
 set nocompatible              " be iMproved, required
+set pastetoggle=<F10>
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize

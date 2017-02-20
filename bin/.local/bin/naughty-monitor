@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#naughty-screen
+
+declare -A screenModes
+
+#opt="--output DP-2 --primary --rotate normal --left-of DVI-I-0"
+#echo $opt | xargs xrandr
+
+THISHOST=$(hostname) 
+
+if [[ "$THISHOST" == 'destroyer' ]]; then
+   screenModes[0]="--output DP-2 --primary --mode 1920x1080 --rotate normal --left-of DVI-I-0"
+   screenModes[1]="--output DP-2 --primary --mode 1920x1080 --rotate inverted --left-of DVI-I-0"
+   screenModes[2]="--output DP-2 --primary --mode 1920x1080 --rotate left --left-of DVI-I-0"
+elif  [[ "$THISHOST" == 'elite' ]]; then
+   screenModes[0]="--output eDP1 --primary --mode 1366x768 --rotate normal"
+   screenModes[1]="--output eDP1 --primary --mode 1366x768 --rotate inverted"
+   screenModes[2]="--output eDP1 --primary --mode 1366x768 --rotate left"
+fi
+
+option=${screenModes[0]}
+
+case "$1" in
+
+	"n" )
+		option=${screenModes[0]};;
+	"f" )
+		option=${screenModes[1]};;
+	"l" )
+		option=${screenModes[2]};;
+esac
+
+echo ${option} | xargs xrandr;
+
+
