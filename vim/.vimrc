@@ -15,6 +15,9 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin '907th/vim-auto-save'
 Plugin 'scrooloose/nerdtree'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'nelstrom/vim-markdown-preview'
+"Plugin 'suan/vim-instant-markdown'
 
 
 " All of your Plugins must be added before the following line
@@ -34,3 +37,6 @@ filetype plugin indent on    " required
 " turn on filetype
 filetype plugin indent on
 syntax enable
+
+" markdown syntax highlighting for md files
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
