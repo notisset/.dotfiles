@@ -1,0 +1,2 @@
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.local/bin/naughty-monitor 5%- , mode "default"
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.local/bin/naughty-monitor 5%+ , mode "default"

@@ -17,6 +17,10 @@ elif  [[ "$THISHOST" == 'elite' ]]; then
    screenModes[0]="--output eDP1 --primary --mode 1366x768 --rotate normal"
    screenModes[1]="--output eDP1 --primary --mode 1366x768 --rotate inverted"
    screenModes[2]="--output eDP1 --primary --mode 1366x768 --rotate left"
+elif  [[ "$THISHOST" == 'wipstaff11' ]]; then
+   screenModes[0]="--output DVI-I-1 --primary --mode 1680x1050 --rotate normal --left-of DP-0"
+   screenModes[1]="--output DVI-I-1 --primary --mode 1680x1050 --rotate inverted --left-of DP-0"
+   screenModes[2]="--output DVI-I-1 --primary --mode 1680x1050 --rotate left --left-of DP-0"
 fi
 
 option=${screenModes[0]}
