@@ -5,7 +5,7 @@
 set $mod Mod4
 
 # Startup programs
-exec --no-startup-id albert
+#exec --no-startup-id albert
 exec --no-startup-id feh --bg-fill ~/.images/cyber_bg.png
 exec --no-startup-id cinnamon-sound-applet
 
@@ -218,4 +218,6 @@ bindsym XF86MonBrightnessUp exec --no-startup-id ~/.local/bin/naughty-monitor 5%
 
 ##FILE EXPLORER
 bindsym $mod+F10 exec pcmanfm
+
+bindsym $mod+d exec rofi -show run -fg "#505050" -bg "#000000" -hlfg "#ffb964" -hlbg "#000000" -width 30 -lines 5 -padding 20 -separator-style none -hide-scrollbar -bw 4 -bc "#111111" -run-list-command rofi-list-directories
 
