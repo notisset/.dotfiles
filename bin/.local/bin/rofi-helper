@@ -31,9 +31,9 @@ def get_apps(dirs):
 def parse(line):
     if line == "":
         return []
-    if line[0] == "!":
+    if line[0] == "$":
         return shlex.split(line[1:])
-    elif line[0] == "?":
+    elif line[0] == "!":
         query = line[1:].strip()
         return ["xdg-open", SEARCH_URL % quote_plus(query)]
     elif re.match(r"^https?://", line):
