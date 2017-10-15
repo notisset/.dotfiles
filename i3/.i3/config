@@ -7,7 +7,8 @@ set $mod Mod4
 # Startup programs
 #exec --no-startup-id albert
 exec --no-startup-id feh --bg-fill ~/.images/cyber_bg.png
-exec --no-startup-id cinnamon-sound-applet
+exec --no-startup-id pnmixer
+exec --no-startup-id redshift-gtk
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
